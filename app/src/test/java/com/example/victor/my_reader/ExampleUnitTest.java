@@ -1,4 +1,4 @@
-package com.example.victor.myreader;
+package com.example.victor.my_reader;
 
 import org.junit.Test;
 

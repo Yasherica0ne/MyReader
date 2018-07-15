@@ -1,7 +1,6 @@
-package com.example.victor.myreader;
+package com.example.victor.my_reader;
 
 import java.io.File;
-import java.io.FileFilter;
 import java.io.FilenameFilter;
 
 public class ExtensionFileFilter implements FilenameFilter {
@@ -13,7 +12,7 @@ public class ExtensionFileFilter implements FilenameFilter {
 
     @Override
     public boolean accept(File file, String s) {
-        if (file.isDirectory() && !s.startsWith(".")) {
+        if (new File(file, s).isDirectory() && !s.startsWith(".")) {
             return true;
         }
         else
